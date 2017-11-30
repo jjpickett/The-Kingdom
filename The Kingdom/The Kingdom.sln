@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "The Kingdom", "The Kingdom\The Kingdom.vcxproj", "{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Debug|x64.ActiveCfg = Debug|x64
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Debug|x64.Build.0 = Debug|x64
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Debug|x86.ActiveCfg = Debug|Win32
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Debug|x86.Build.0 = Debug|Win32
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Release|x64.ActiveCfg = Release|x64
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Release|x64.Build.0 = Release|x64
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Release|x86.ActiveCfg = Release|Win32
+		{621D9DCB-28D1-4E5F-8D09-FF9CC43B18B1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EF0BAD8-9F1E-4D8F-B794-1B794234D95E}
+	EndGlobalSection
+EndGlobal

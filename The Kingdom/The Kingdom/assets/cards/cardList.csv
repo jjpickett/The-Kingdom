@@ -1,0 +1,57 @@
+31,The weakest of\nthem all,1,2,1
+31,Hopes to eventually\nbecome the strongest\nof them all,1,4,3
+31,The most mediocre\nof them all,2,5,2
+31,The king of the\njungle,2,10,2
+31,The strongest of\nthem all,3,8,4
+32,Watch out for this guy!,1,2,5
+32,He's got your back,1,3,3
+32,Well he's definitely\nnot the worst,2,4,1
+32,Willing to go the\ndistance for the team,2,8,2
+32,Doctor's hate this\none weird trick,3,10,4
+33,The lion doesn't\nsleep tonight,1,4,2
+33,No sleep 'til Brooklyn!,1,6,2
+33,We will never sleep\ncuz sleep is for\nthe weak!,2,5,4
+33,I believe we can\nmake it through\nthe night!,2,6,3
+33,Sleep with one eye\nopen gripping\nyour pillow tight,3,10,5
+34,1x - Destroys one\nrandom opponent\ncard,2,4,2,R,1
+34,1x - Destroys one\nrandom opponent\ncard,2,4,3,R,1
+34,1x - Destroys two\nrandom opponent\ncards,3,5,2,R,2
+34,1x - Does 1 damage\nto all opponent\ncards,1,3,1,D,1
+34,1x - Does 1 damage\nto all opponent\ncards,2,5,2,D,1
+34,1x - Does 2 damage\nto all opponent\ncards,3,8,4,D,2
+34,1x - Wakes up all\nfriendly cards on\nthe board,1,2,2,W,0
+34,1x - Wakes up all\nfriendly cards on\nthe board,2,7,3,W,0
+34,1x - Wakes up all\nfriendly cards on\nthe board,4,9,6,W,0
+35,AP +1 for all friendly\ncards until this\ncard is destroyed,1,7,2,A,1
+35,AP +1 for all friendly\ncards until this\ncard is destroyed,2,8,2,A,1
+35,AP +2 for all friendly\ncards until this\ncard is destroyed,4,10,2,A,2
+35,Heal 1 random\nfriendly card each\nturn until this card\nis destroyed,3,6,2,H,1
+35,Heal 1 random\nfriendly card each\nturn until this card\nis destroyed,3,7,3,H,1
+35,Heal 1 random\nfriendly card each\nturn until this card\nis destroyed,3,8,1,H,1
+35,Poison each\nopponent card by 1 HP\neach turn until card\nis destroyed,2,5,1,P,1
+35,Poison each\nopponent card by 1 HP\neach turn until card\nis destroyed,2,6,1,P,1
+35,Poison each\nopponent card by 1 HP\neach turn until card\nis destroyed,3,8,2,P,1
+36,Basically a shield,1,10
+37,"While this totem\nis in play heals all\ndamaged\nfriendly cards\nby 1 HP each turn",1,8,H,1
+37,"While this totem\nis in play all friendly\ncards have +2 AP",1,8,A,2
+38,"While this totem\nis in play player\ndraws 2 cards each time\na card is drawn",1,8,Z,2
+38,"While this totem\nis in play each\nfriendly card has +1 HP",1,8,H,1
+38,"While this totem\nis in play player\ndraws 2 cards each time\na card is drawn",2,8,A,2
+38,"While this totem\nis in play player\ngains 1 additional coin\neach turn",2,8,C,1
+39,"While this totem\nis in play damages\nall opponent cards\nby 1 HP each turn",1,8,D,1
+39,"While this totem\nis in play damages\nall opponenet cards\nby 2 HP each turn",2,8,D,2
+40,Heal yourself by 3 HP,1,H,3
+40,Heal yourself by 5 HP,1,H,5
+40,Earn 3 coins,2,C,3
+40,Earn 5 coins,2,C,5
+41,Summons 1 random\nMinion to the board,1,S,31
+41,Summons 1 random\nMinion Battlecry to the\nboard,2,S,34
+41,Summons 1 random\nMinion Taunt to the\nboard,4,S,32
+41,Summons 1 random\nMinion Friendly to the\nboard,4,S,35
+42,Remove all opponent\ntaunts,1,G,2
+42,Wake up all cards on\nthe board,1,W,0
+42,Heals all damaged\nfriendly cards by 2 HP,2,H,2
+42,Damages all opponent\ncards by 2 HP,2,D,2
+43,All minions with AP\nbelow 3 gain an\nadditional 3 AP,1,A,2
+43,All minions gain\n2 HP (to a maximum\nof 10),1,H,2
+43,Wake up all\nsleeping minions,2,W,0
