@@ -28,6 +28,6 @@ sf::Packet MinionFriendly::write(sf::Packet & os)
 	return os;
 }
 
-void MinionFriendly::effect()
+void MinionFriendly::effect(Board* board)
 {
 }

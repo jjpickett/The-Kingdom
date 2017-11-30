@@ -13,7 +13,7 @@ TotemFriendly::~TotemFriendly()
 {
 }
 
-void TotemFriendly::effect()
+void TotemFriendly::effect(Board* board)
 {
 }
 

@@ -15,7 +15,6 @@
 #include <iostream>
 #include <SFML\Graphics.hpp>
 #include "DEFINITIONS.h"
-#include "Card.h"
 #include "CardFactory.h"
 #include "Minion.h"
 #include "Game.h"
@@ -70,7 +69,7 @@ public:
 	void setSelection(bool isSelecting);
     
     /// Determines the players effect and applies it to the player.
-    virtual void effect() = 0;	
+    virtual void effect(Board* board) = 0;	
 
 	void Draw(float dt);
 

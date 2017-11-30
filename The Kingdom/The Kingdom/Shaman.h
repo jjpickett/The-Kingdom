@@ -26,6 +26,6 @@ public:
 
     /// Applies the effect of spending 2 stamina points to gain a 
     /// Totem card to their cards in play.
-    virtual void effect();
+    void effect(Board* board);
 
 };

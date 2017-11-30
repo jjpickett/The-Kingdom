@@ -1,6 +1,9 @@
 
 #include "MyPacket.h"
 #include "CardFactory.h"
+#include "Mage.h"
+#include "Shaman.h"
+#include "Warrior.h"
 #include <iostream>
 
 MyPacket::MyPacket()

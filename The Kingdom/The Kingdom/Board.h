@@ -2,15 +2,16 @@
 
 #include <SFML\Graphics.hpp>
 #include <SFML\Network.hpp>
+#include <iostream>
 #include "DEFINITIONS.h"
 #include "State.h"
 #include "Game.h"
-#include "Player.h"
 #include "Mage.h"
 #include "Warrior.h"
 #include "Shaman.h"
 #include "MyPacket.h"
 
+class Card;
 
 class Board : public State
 
@@ -71,4 +72,3 @@ private:
 	sf::Mutex globalMutex;
 
 };
-

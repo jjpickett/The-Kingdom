@@ -29,7 +29,7 @@ public:
 
     /// Determines the player effect and applies it.
     /// \param[in] board The current game board.
-    virtual void effect();
+	void effect(Board* board);
 
 	/// Gets the Minions curHealth.
 	/// \return The Minions curHealth.

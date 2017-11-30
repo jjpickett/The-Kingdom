@@ -22,6 +22,8 @@
 /// This class provides the Cards name, description, the cost, whether or not the
 /// card is asleep, and the filepath to the Cards image.
 // *******************************************************************************
+class Board; 
+
 class Card
 {
 public:

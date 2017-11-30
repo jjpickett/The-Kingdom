@@ -13,7 +13,7 @@ MagicMinion::~MagicMinion()
 {
 }
 
-void MagicMinion::effect()
+void MagicMinion::effect(Board* board)
 {
 }
 

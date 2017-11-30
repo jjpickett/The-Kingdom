@@ -15,7 +15,3 @@ Magic::Magic(GameDataRef data, std::string name, std::string description, int co
 Magic::~Magic()
 {
 }
-
-void Magic::effect()
-{
-}

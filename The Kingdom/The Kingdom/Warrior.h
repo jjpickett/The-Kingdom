@@ -27,7 +27,7 @@ public:
 
     /// Applies the effect of spending 2 stamina points to gain 2 points toward 
     /// its shield.
-    virtual void effect();
+    void effect(Board* board) override;
 
 private:
 

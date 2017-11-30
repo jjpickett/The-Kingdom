@@ -13,7 +13,7 @@ MagicSummon::~MagicSummon()
 {
 }
 
-void MagicSummon::effect()
+void MagicSummon::effect(Board* board)
 {
 }
 

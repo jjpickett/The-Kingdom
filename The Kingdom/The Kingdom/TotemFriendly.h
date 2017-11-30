@@ -31,7 +31,7 @@ public:
 
     /// Determines the friendly effect use and applies it.
     /// \param[in] board The current game board.
-    virtual void effect();
+    void effect(Board* board);
 
 	void read(sf::Packet & is);
 	sf::Packet write(sf::Packet &os) override;

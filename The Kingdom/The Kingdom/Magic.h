@@ -33,7 +33,7 @@ public:
 
 	/// The effect of the Magic card.
 	/// \param[in] board The current game board.
-	virtual void effect() = 0;
+	virtual void effect(Board* board) = 0;
 
 	void Draw(float dt) override { Card::Draw(dt); }
 	virtual sf::Packet write(sf::Packet & os) = 0;

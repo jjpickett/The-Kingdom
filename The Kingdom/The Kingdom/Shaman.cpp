@@ -16,6 +16,6 @@ Shaman::~Shaman()
 {
 }
 
-void Shaman::effect()
+void Shaman::effect(Board * board)
 {
 }

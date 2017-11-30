@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Card.h"
 #include <vector>
 #include <iostream>     // std::cout
@@ -15,6 +16,7 @@
 #include "TotemPlayer.h"
 #include "TotemBoard.h"
 #include "Game.h"
+
 class CardFactory
 {
 public:

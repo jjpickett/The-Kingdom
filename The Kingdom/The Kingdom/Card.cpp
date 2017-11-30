@@ -1,6 +1,6 @@
 
 #include "Card.h"
-
+#include "Board.h"
 
 Card::Card()
 {

@@ -18,6 +18,6 @@ Mage::~Mage()
 {
 }
 
-void Mage::effect()
+void Mage::effect(Board * board)
 {
 }

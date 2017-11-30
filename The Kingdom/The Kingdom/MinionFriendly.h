@@ -34,7 +34,7 @@ public:
 
     /// Determines which friendly effect to be used and applies the effect.
     /// \param[in] board The current game board.
-    virtual void effect();
+	void effect(Board* board);
 
 	sf::Int8 getId() override
 	{

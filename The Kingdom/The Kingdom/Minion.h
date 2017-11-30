@@ -39,7 +39,7 @@ public:
 
     /// The effect of the Minion card.
     /// \param[in] board The current game board.
-	void effect() {}
+	void effect(Board* board) {}
 
     /// Gets the Minions curHealth.
     /// \return The Minions curHealth.

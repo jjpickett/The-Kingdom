@@ -13,7 +13,7 @@ TotemPlayer::~TotemPlayer()
 {
 }
 
-void TotemPlayer::effect()
+void TotemPlayer::effect(Board* board)
 {
 }
 

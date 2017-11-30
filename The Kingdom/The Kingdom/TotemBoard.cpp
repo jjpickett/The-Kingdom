@@ -13,7 +13,7 @@ TotemBoard::~TotemBoard()
 {
 }
 
-void TotemBoard::effect()
+void TotemBoard::effect(Board* board)
 {
 }
 

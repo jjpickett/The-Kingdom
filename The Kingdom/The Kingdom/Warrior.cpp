@@ -16,8 +16,7 @@ Warrior::~Warrior()
 {
 }
 
-void Warrior::effect()
+void Warrior::effect(Board * board)
 {
 }
-
 

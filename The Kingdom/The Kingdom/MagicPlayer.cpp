@@ -13,7 +13,7 @@ MagicPlayer::~MagicPlayer()
 {
 }
 
-void MagicPlayer::effect()
+void MagicPlayer::effect(Board* board)
 {
 }
 

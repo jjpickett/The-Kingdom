@@ -43,7 +43,7 @@ sf::Packet Totem::write(sf::Packet & os)
 	return os;
 }
 
-void Totem::effect()
+void Totem::effect(Board* board)
 {
 }
 

@@ -13,7 +13,7 @@ MagicBoard::~MagicBoard()
 {
 }
 
-void MagicBoard::effect()
+void MagicBoard::effect(Board* board)
 {
 }
 

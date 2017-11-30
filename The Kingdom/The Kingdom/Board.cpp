@@ -1,6 +1,5 @@
 #include "Board.h"
-#include <iostream>
-
+#include "Card.h"
 
 Board::Board(GameDataRef data) : _data(data)
 {

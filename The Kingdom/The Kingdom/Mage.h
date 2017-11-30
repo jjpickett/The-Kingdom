@@ -30,7 +30,7 @@ public:
     /// Applies the effect of spending 2 stamina points to gain the ability to 
     /// shoot a fireball at any target that is in play. Once the target is hit, 
     /// it receives two damage.
-    virtual void effect();
+    void effect(Board* board) override;
 
 };
 

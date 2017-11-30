@@ -30,6 +30,6 @@ sf::Packet MinionBattleCry::write(sf::Packet & os)
 	return os;
 }
 
-void MinionBattleCry::effect()
+void MinionBattleCry::effect(Board* board)
 {
 }
