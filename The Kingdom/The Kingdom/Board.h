@@ -5,10 +5,15 @@
 /// \date Nov 26, 2017
 ///
 ///
+<<<<<<< HEAD
+/// \brief The Board class contains all the players ands cards, controls the 
+/// game logic and is used to update the players clients.
+=======
 /// \brief The Board class contains the player classes and controls the game 
 /// logic such as turn order, drawing cards into each of the players 
 /// hands, controlling the cards abilities and declaring the victor 
 /// when the game is over.
+>>>>>>> 4d795295ca5462e872def5a0de096b4e43eaa96a
 ///
 
 #pragma once
@@ -28,25 +33,43 @@
 class Card;
 
 // *******************************************************************************
+<<<<<<< HEAD
+/// \brief The Board class contains all the players ands cards, controls the 
+/// game logic and is used to update the players clients.
+// *******************************************************************************
+
+=======
 /// The Board class contains the player classes and controls the game logic such 
 /// as turn order, drawing cards into each of the players hands, controlling the 
 /// cards abilities and declaring the victor when the game is over. The player 
 /// who is considered the opponent is the one who connects to the game as opposed 
 /// to hosting the game. The host of the game will be considered the main player.
 // *******************************************************************************
+>>>>>>> 4d795295ca5462e872def5a0de096b4e43eaa96a
 class Board : public State
 {
 public:
+
+	/// Creates the Board object and initializes it.
+	/// \param[in] data The structure of game data.
 	Board(GameDataRef data);
+
+	/// Initializes the cards
 	void Init();
 
+	///  Controls whether a player can perform any actions.
 	void HandleInput();
+
+	///  receives a packet and updates the board based on the contents of the packet.
 	void Update(float dt);
+
+	/// Draws the background, the players and all the card textures.
 	void Draw(float dt);
 
 	/// Checks the win conditions to see if any player has less than 0 health points.
 	void checkWinConditions();
 
+	/// Checks whether a card has been destroyed or not.
 	void checkDeath();
 
 	/// Lets a Card attack another Card.
@@ -75,21 +98,28 @@ public:
 	Player* hostPlayer = NULL;
 
 private:
+	/// Game meta Data
 	GameDataRef _data;
 
+	///Textures that will be loaded for the background and border.
 	sf::Sprite _background;
 	sf::Sprite _border;
 
 	/// True or false value used for verifying the turn order.
 	bool hostPlayerTurn;
 
+	/// Player attributes that will contain the guestPlayer.
 	Player* guestPlayer = NULL;
 	
+	/// vector that contains the guestPlayers hand.
 	std::vector<sf::Sprite*> guestPlayerInHand;
 
+	/// Controls the game state.
 	int gameState;
 
+	///Msg that is sent alongside packet.
 	std::string msgSend;
 
+	/// Mutex to lock threads before sending packet.
 	sf::Mutex globalMutex;
 };
