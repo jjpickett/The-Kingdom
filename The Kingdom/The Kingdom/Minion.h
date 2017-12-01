@@ -59,13 +59,15 @@ public:
     /// \return The Minions taunt boolean value.
     bool isTaunt();
 
+	/// Sets the card's taunt state.
+	void setTaunt(bool state);
+
 	/// Returns whether or not the card is asleep.
 	/// \return Whether or not the card is asleep.
 	bool isAsleep();
     
-    /// Returns whether or not the card is asleep.
-    /// \return Whether or not the card is asleep.
-    void setSleep(bool state);
+    /// Sets the card's sleep state.
+    void setAsleep(bool state);
 
 	void Draw(float dt) override;
 

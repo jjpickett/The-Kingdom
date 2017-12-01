@@ -56,12 +56,17 @@ bool Minion::isTaunt()
 	return taunt;
 }
 
+void Minion::setTaunt(bool state)
+{
+	taunt = state;
+}
+
 bool Minion::isAsleep()
 {
 	return asleep;
 }
 
-void Minion::setSleep(bool state)
+void Minion::setAsleep(bool state)
 {
     asleep = state;
 }

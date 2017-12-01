@@ -1,3 +1,13 @@
+//
+// CS 2720: GeneralFailure
+//
+/// \author Taylor Doud, Matthew Rose
+/// \date Nov 26, 2017
+///
+///
+/// The Warrior class is a concrete derived class, which inherits from Player. 
+///
+
 #pragma once
 
 #include <SFML\Graphics.hpp>
@@ -14,7 +24,6 @@
 class Card;
 
 class Board : public State
-
 {
 public:
 	Board(GameDataRef data);
@@ -23,7 +32,6 @@ public:
 	void HandleInput();
 	void Update(float dt);
 	void Draw(float dt);
-
 
 	/// Checks the win conditions to see if any player has less than 0 health points.
 	void checkWinConditions();
@@ -50,21 +58,18 @@ public:
 	/// The cards that the hostPlayer has in play.
 	std::vector<Card*> hostPlayersCardsInPlay;
 
+	/// The host player.
+	Player* hostPlayer = NULL;
+
 private:
 	GameDataRef _data;
 
 	sf::Sprite _background;
 	sf::Sprite _border;
 
-
-
-
-	
-
 	/// True or false value used for verifying the turn order.
 	bool hostPlayerTurn;
 
-	Player* hostPlayer = NULL;
 	Player* guestPlayer = NULL;
 	
 	std::vector<sf::Sprite*> guestPlayerInHand;
@@ -74,5 +79,4 @@ private:
 	std::string msgSend;
 
 	sf::Mutex globalMutex;
-
 };
