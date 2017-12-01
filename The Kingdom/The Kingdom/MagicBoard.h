@@ -1,11 +1,11 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
 ///
 ///
-/// The MagicBoard class is a concrete derived class, inherits from Magic.
+/// \brief The MagicBoard class is a concrete derived class, inherits from Magic.
 ///
 
 #pragma once
@@ -45,7 +45,7 @@ public:
 	virtual sf::Int8 getDamage() { return -1; };
 
 	/// Sets the Minions damageValue.
-	virtual void setDamage(int damagealue) {};
+	virtual void setDamage(int damageValue) {};
 
 	sf::Int8 getId() override
 	{

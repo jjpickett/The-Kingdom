@@ -1,11 +1,11 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
 ///
 ///
-/// The MinionFriendly class is a concrete derived class, inherits from Minion. 
+/// \brief The MinionFriendly class is a concrete derived class, inherits from Minion. 
 ///
 
 #pragma once

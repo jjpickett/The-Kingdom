@@ -1,11 +1,11 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
 ///
 ///
-/// The Minion class is an abstract class that will be inherited by Minion cards, 
+/// \brief The Minion class is an abstract class that will be inherited by Minion cards, 
 /// inherits from Card.
 ///
 
