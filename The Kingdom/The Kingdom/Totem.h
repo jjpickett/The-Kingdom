@@ -53,10 +53,16 @@ public:
 	/// Sets the Minions damageValue.
 	void setDamage(int damagealue) {}
 
+	/// Gets the Totem's taunt boolean value.
+	/// \return The Totem's taunt boolean value.
+	bool isTaunt();
+
+	/// Sets the Totem's taunt boolean value.
+	void setTaunt(bool newTaunt);
+
 	/// The effect of the Totem card.
 	/// \param[in] board The current game board.
 	void effect(Board* board);
-
 
 protected:
 
@@ -74,8 +80,6 @@ protected:
 
     /// Determines whether totem has a taunt or not.
     bool taunt;
-
-   
 
 	void Draw(float dt) override;
 

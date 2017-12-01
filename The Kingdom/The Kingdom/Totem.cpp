@@ -43,6 +43,16 @@ sf::Packet Totem::write(sf::Packet & os)
 	return os;
 }
 
+bool Totem::isTaunt()
+{
+	return taunt;
+}
+
+void Totem::setTaunt(bool newTaunt)
+{
+	taunt = newTaunt;
+}
+
 void Totem::effect(Board* board)
 {
 }

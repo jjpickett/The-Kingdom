@@ -1,5 +1,6 @@
 
 #include "TotemBoard.h"
+#include "Board.h"
 
 TotemBoard::TotemBoard(GameDataRef data) : Totem(data)
 {
@@ -15,6 +16,13 @@ TotemBoard::~TotemBoard()
 
 void TotemBoard::effect(Board* board)
 {
+	switch (ability)
+	{
+	case 'D': // Damages all opponent cards
+		for (int i = 0; i < board->guestPlayersCardsInPlay.size(); i++)
+			board->guestPlayersCardsInPlay.at(i)->setCurHealth(-amount);
+		break;
+	}
 }
 
 void TotemBoard::read(sf::Packet & is)
