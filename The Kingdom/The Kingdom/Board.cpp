@@ -119,7 +119,7 @@ void Board::HandleInput()
 				globalMutex.unlock();
 			}
 
-			//This is temporary. Delete when done
+			//TODO: This is temporary. Delete when done
 			if (event.key.code == sf::Keyboard::Q)
 			{
 				hostPlayer->drawCard();

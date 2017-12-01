@@ -95,7 +95,7 @@ private:
     std::string name;
 
     /// The total number of health points that the player has.
-    int health;
+    int health = 30;
     /// The total number of current action points that 
     /// the player has available to use.
     int actionPoints;
