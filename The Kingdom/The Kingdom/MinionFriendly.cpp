@@ -23,7 +23,7 @@ void MinionFriendly::read(sf::Packet & is)
 
 }
 
-sf::Packet MinionFriendly::write(sf::Packet & os)
+sf::Packet & MinionFriendly::write(sf::Packet & os)
 {
 	os << this->getId() << this->getName() << this->description << this->cost << this->curHealth << this->damageValue << this->taunt << this->charge << this->ability << this->amount;
 	return os;

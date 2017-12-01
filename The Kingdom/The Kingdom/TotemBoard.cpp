@@ -31,7 +31,7 @@ void TotemBoard::read(sf::Packet & is)
 	this->Init();
 }
 
-sf::Packet TotemBoard::write(sf::Packet & os)
+sf::Packet & TotemBoard::write(sf::Packet & os)
 {
 	os << this->getId() << this->name << this->description << this->cost << this->ability << this->amount << this->curHealth << this->taunt;
 	return os;

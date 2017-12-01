@@ -49,7 +49,7 @@ public:
 	/// Writing the card data to the packet.
 	/// \param[in] os The outgoing packet.
 	/// \return The completed packet.
-	sf::Packet write(sf::Packet &os) override;
+	sf::Packet & write(sf::Packet &os) override;
 
 	/// Gets the TotemBoard's damageValue.
 	/// \return The TotemBoard's damageValue.

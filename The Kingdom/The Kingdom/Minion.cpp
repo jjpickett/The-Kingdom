@@ -99,7 +99,7 @@ void Minion::read(sf::Packet & is)
 	Init();
 }
 
-sf::Packet Minion::write(sf::Packet & os)
+sf::Packet & Minion::write(sf::Packet & os)
 {
 	return os << this->getId() << this->name << this->description << this->cost << this->curHealth << this->damageValue << this->taunt << this->charge;
 }

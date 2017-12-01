@@ -36,7 +36,7 @@ public:
     /// Writing the card data to the packet.
     /// \param[in] os The outgoing packet.
     /// \return The completed packet.
-    sf::Packet write(sf::Packet &os) override;
+    sf::Packet & write(sf::Packet &os) override;
 
     /// Determines which friendly effect to be used and applies the effect.
     /// \param[in] board The current game board.

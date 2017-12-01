@@ -48,7 +48,7 @@ void MagicMinion::read(sf::Packet & is)
 	Card::Init();
 }
 
-sf::Packet MagicMinion::write(sf::Packet & os)
+sf::Packet & MagicMinion::write(sf::Packet & os)
 {
 	os << this->getId() << this->name << this->description << this->cost << this->ability << this->amount;
 	return os;

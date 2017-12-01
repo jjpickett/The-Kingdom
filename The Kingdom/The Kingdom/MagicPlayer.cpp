@@ -35,7 +35,7 @@ void MagicPlayer::read(sf::Packet & is)
 	Card::Init();
 }
 
-sf::Packet MagicPlayer::write(sf::Packet & os)
+sf::Packet & MagicPlayer::write(sf::Packet & os)
 {
 	os << this->getId() << this->name << this->description << this->cost << this->ability << this->amount;
 	return os;

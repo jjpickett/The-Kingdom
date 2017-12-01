@@ -25,7 +25,7 @@ void MinionBattleCry::read(sf::Packet & is)
 	this->Init();
 }
 
-sf::Packet MinionBattleCry::write(sf::Packet & os)
+sf::Packet & MinionBattleCry::write(sf::Packet & os)
 {
 	os << this->getId() << this->getName() << this->description << this->cost << this->curHealth << this->damageValue << this->taunt << this->charge << this->ability << this->amount;
 	return os;

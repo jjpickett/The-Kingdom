@@ -50,7 +50,7 @@ void TotemFriendly::read(sf::Packet & is)
 	this->Init();
 }
 
-sf::Packet TotemFriendly::write(sf::Packet & os)
+sf::Packet & TotemFriendly::write(sf::Packet & os)
 {
 	os << this->getId() << this->name << this->description << this->cost << this->ability << this->amount << this->curHealth << this->taunt;
 	return os;

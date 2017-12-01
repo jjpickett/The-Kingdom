@@ -57,7 +57,7 @@ void MagicBoard::read(sf::Packet & is)
 	Card::Init();
 }
 
-sf::Packet MagicBoard::write(sf::Packet & os)
+sf::Packet & MagicBoard::write(sf::Packet & os)
 {
 	os << this->getId() << this->name << this->description << this->cost << this->ability << this->amount;
 	return os;

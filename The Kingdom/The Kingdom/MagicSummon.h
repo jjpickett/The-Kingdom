@@ -62,6 +62,6 @@ public:
 	}
 
 	void read(sf::Packet & is) override;
-	sf::Packet write(sf::Packet & os) override;
+	sf::Packet & write(sf::Packet & os) override;
 };
 

@@ -43,7 +43,7 @@ public:
     /// Writes the contents of the output stream to a Packet.
     /// \param The output stream to send as a packet.
     /// \return A packet to send across the network.
-    virtual sf::Packet write(sf::Packet & os) = 0;
+    virtual sf::Packet & write(sf::Packet & os) = 0;
 	
     /// Returns the ID of the card.
 	virtual sf::Int8 getId() = 0;

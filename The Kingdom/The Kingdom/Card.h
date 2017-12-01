@@ -79,7 +79,7 @@ public:
 	virtual sf::Int8 getId() = 0;
 
 	virtual void read(sf::Packet & is) = 0;
-	virtual sf::Packet write(sf::Packet & os) = 0;
+	virtual sf::Packet & write(sf::Packet & os) = 0;
 
 	/// Gets the Minions curHealth.
 	/// \return The Minions curHealth.
