@@ -13,6 +13,7 @@
 #include <SFML\Graphics.hpp>
 #include <SFML\Network.hpp>
 #include <iostream>
+#include <algorithm>
 #include "DEFINITIONS.h"
 #include "State.h"
 #include "Game.h"
@@ -35,6 +36,8 @@ public:
 
 	/// Checks the win conditions to see if any player has less than 0 health points.
 	void checkWinConditions();
+
+	void checkDeath();
 
 	/// Lets a Card attack another Card.
 	/// \param[in] card1 The attacking Card.

@@ -62,7 +62,6 @@ sf::Packet MyPacket::sendOpponentsCardsInPlay(std::vector<Card*> cardsInPlay)
 
 std::vector<Card*> MyPacket::receiveOpponentInPlayPacket(sf::Packet packetReceive, GameDataRef data)
 {
-	std::vector<Card*> cardsInPlay;
 	CardFactory cardFactory;
 	
 	return cardFactory.newCard(data, packetReceive);
@@ -72,8 +71,9 @@ std::vector<Card*> MyPacket::receiveOpponentInPlayPacket(sf::Packet packetReceiv
 
 std::vector<Card*> MyPacket::receivePlayerInPlayPacket(sf::Packet packetReceive, GameDataRef data)
 {
-	std::vector<Card*> cardsInPlay;
-	return cardsInPlay;
+	CardFactory cardFactory;
+
+	return cardFactory.newCard(data, packetReceive);
 }
 
 
