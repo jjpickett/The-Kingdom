@@ -199,6 +199,8 @@ void Board::HandleInput()
 							if (this->_data->input.CheckSpriteCollision(hostPlayersCardsInPlay.at(x)->_cardSprite, guestPlayersCardsInPlay.at(j)->_cardSprite, this->_data->window))
 							{
 								attack(hostPlayersCardsInPlay.at(x), guestPlayersCardsInPlay.at(j));
+								
+
 								//std::cout << "Collision Detexted Against: " << guestPlayersCardsInPlay.at(j)->getName() << std::endl;
 							}
 						}
@@ -214,7 +216,7 @@ void Board::HandleInput()
 						this->hostPlayer->setSelection(false);
 					}	
 				}
-				
+				checkDeath();
 			}
 		}
 	}
@@ -270,7 +272,6 @@ void Board::Update(float dt)
 		//sf::sleep(sf::seconds(5));
 	}
 
-
 }
 
 void Board::Draw(float dt)
@@ -323,6 +324,19 @@ void Board::Draw(float dt)
 
 void Board::checkWinConditions()
 {
+}
+
+void Board::checkDeath()
+{
+	for (int i = 0; i < guestPlayersCardsInPlay.size(); i++)
+		if (guestPlayersCardsInPlay.at(i)->getCurHealth() <= 0)
+			guestPlayersCardsInPlay.erase(guestPlayersCardsInPlay.begin() + i);
+	
+
+	for (int i = 0; i < hostPlayersCardsInPlay.size(); i++)
+		if (hostPlayersCardsInPlay.at(i)->getCurHealth() <= 0)
+			hostPlayersCardsInPlay.erase(hostPlayersCardsInPlay.begin() + i);
+
 }
 
 void Board::attack(Card* card1, Card* card2)
