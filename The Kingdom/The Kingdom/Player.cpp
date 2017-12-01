@@ -40,6 +40,8 @@ int Player::getActionPoints()
 void Player::setActionPoints(int modify)
 {
 	actionPoints += modify;
+	if (actionPoints > 10)
+		actionPoints = 10;
 }
 
 int Player::getHealth()
