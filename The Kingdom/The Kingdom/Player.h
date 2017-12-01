@@ -1,8 +1,8 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
 ///
 ///
 /// \brief The Player class is an abstract class that will be inherited by 
@@ -30,13 +30,18 @@
 class Player
 {
 public:
+    
+    /// The default constructor.
 	Player();
+
     /// Creates the Player object and initializes it.
     /// \param[in] name The name of the Player.
 	Player(GameDataRef data);
     
+    /// The destructor for Player.
 	~Player();
     
+    /// Initializes the Player.
 	void init();
 
     /// Gets the actionPoints for verifying if a card can be played, and for 

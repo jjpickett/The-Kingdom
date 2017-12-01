@@ -29,13 +29,21 @@ public:
     /// Destroys the MinionFriendly object.
     ~MinionFriendly();
 
+    /// Reading in the card data from a packet.
+    /// \param[in] The input packet.
 	void read(sf::Packet & is);
-	sf::Packet write(sf::Packet &os) override;
+	
+    /// Writing the card data to the packet.
+    /// \param[in] os The outgoing packet.
+    /// \return The completed packet.
+    sf::Packet write(sf::Packet &os) override;
 
     /// Determines which friendly effect to be used and applies the effect.
     /// \param[in] board The current game board.
 	void effect(Board* board);
 
+    /// Gets the ID of the card
+    /// \return The ID of the card
 	sf::Int8 getId() override
 	{
 		return MINION_FRIENDLY_CARD;
