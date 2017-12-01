@@ -33,6 +33,7 @@ public:
 	Player();
     /// Creates the Player object and initializes it.
     /// \param[in] name The name of the Player.
+	Player(GameDataRef data);
     
 	~Player();
     
@@ -98,7 +99,7 @@ private:
     int health = 30;
     /// The total number of current action points that 
     /// the player has available to use.
-    int actionPoints;
+    int actionPoints = 2;
 
 	bool myTurn;
 

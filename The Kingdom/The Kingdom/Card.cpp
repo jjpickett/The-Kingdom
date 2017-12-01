@@ -12,7 +12,6 @@ Card::Card(GameDataRef data):_data(data)
 
 void Card::Init()
 {
-	sf::Text asleepText;
 	this->_cardSprite.setTexture(_data->assets.getTexture(name));
 
 	this->font.loadFromFile(GAME_FONT);

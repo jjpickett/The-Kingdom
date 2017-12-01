@@ -6,7 +6,7 @@ Mage::Mage()
 {
 }
 
-Mage::Mage(GameDataRef data)
+Mage::Mage(GameDataRef data):Player(data)
 {	
 	this->_data = data;
 	this->_playerSprite.setTexture(_data->assets.getTexture("Mage"));

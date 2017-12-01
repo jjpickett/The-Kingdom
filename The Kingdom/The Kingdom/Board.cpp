@@ -254,6 +254,9 @@ void Board::Update(float dt)
                 }
             }
 			//TODO: Run Totems on players side ability here
+			
+			/// \brief	Updates the tokens in the players hand
+			hostPlayer->setActionPoints(1);
 
 			break;
 		case 5:
