@@ -1,0 +1,21 @@
+	id (int)	description (string)	COST (#)	health (int 1-10)	attack (int 1 -10)	taunt	charge		
+minion	31					0	0		
+minionTaunt	32					1	0		
+minionCharge	33					0	1		
+									
+	id		COST (#)	health (int 1-10)	attack (int 1 -10)	taunt	charge	"id (char R, H, W)"	amount (int)
+minionBattlecry	34					0	0		
+	id		COST (#)	health (int 1-10)	attack (int 1 -10)	taunt	charge	"id (char A, D, P)"	amount (int)
+minionFriendly	35					0	0		
+									
+	id	description (string)	COST (#)	health					
+magicPlayer	36			0					
+magicSummon	37			0					
+magicBoard	38			0					
+magicMinion	39			0					
+									
+	id	description (string)	COST (#)	health					
+totemTaunt	40								
+totemFriendly	41								
+totemPlayer	42								
+totemBoard	43								
