@@ -1,8 +1,8 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
 ///
 ///
 /// The Warrior class is a concrete derived class, which inherits from Player. 
@@ -19,14 +19,17 @@
 class Warrior : public Player 
 {
 public:
+
 	Warrior();
-    /// Constructs a Mage object.
+
+	/// Constructs a Warrior object.
     Warrior(GameDataRef data);
-    /// Destroys the Mage object.
+
+	/// Destroys the Warrior object.
     ~Warrior();
 
-    /// Applies the effect of spending 2 stamina points to gain 2 points toward 
-    /// its shield.
+	/// Applies the effect of spending 2 stamina points to gain 2 points toward 
+	/// its shield.
     void effect(Board* board) override;
 
 private:

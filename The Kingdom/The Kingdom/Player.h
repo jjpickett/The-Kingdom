@@ -5,7 +5,7 @@
 /// \date Oct 26, 2017
 ///
 ///
-/// The Player class is an abstract class that will be inherited by 
+/// \brief The Player class is an abstract class that will be inherited by 
 /// different player type (character) classes.
 ///
 

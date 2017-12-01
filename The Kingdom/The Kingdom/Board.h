@@ -1,11 +1,14 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
 /// \date Nov 26, 2017
 ///
 ///
-/// The Warrior class is a concrete derived class, which inherits from Player. 
+/// \brief The Board class contains the player classes and controls the game 
+/// logic such as turn order, drawing cards into each of the players 
+/// hands, controlling the cards abilities and declaring the victor 
+/// when the game is over.
 ///
 
 #pragma once
@@ -24,6 +27,13 @@
 
 class Card;
 
+// *******************************************************************************
+/// The Board class contains the player classes and controls the game logic such 
+/// as turn order, drawing cards into each of the players hands, controlling the 
+/// cards abilities and declaring the victor when the game is over. The player 
+/// who is considered the opponent is the one who connects to the game as opposed 
+/// to hosting the game. The host of the game will be considered the main player.
+// *******************************************************************************
 class Board : public State
 {
 public:

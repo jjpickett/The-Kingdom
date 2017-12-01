@@ -14,13 +14,11 @@ Totem::Totem(GameDataRef data, std::string name, std::string description, int co
 	this->taunt = taunt;
 
 	Init();
-	
 }
 
 void Totem::Init()
 {
 	healthText.setFont(font);
-
 
 	//SET SIZE AND FILL
 	healthText.setFillColor(sf::Color::Black);
