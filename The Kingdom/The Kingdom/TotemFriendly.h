@@ -21,10 +21,11 @@ class TotemFriendly : public Totem
 public:
     
 	TotemFriendly(GameDataRef data);
+    
     /// Creates the TotemFriendly object and initializes it.
     /// \param[in] id ID of the card.
     /// \param[in] amount The value to be used by the effect.
-    TotemFriendly(GameDataRef data, std::string name, std::string description, int cost, char ability, int amount, int health, bool taunt);
+    TotemFriendly(GameDataRef data, std::string name, std::string description, int cost, char ability, bool taunt, int health, int amount);
     
     /// Destroys the TotemFriendly object.
     ~TotemFriendly();

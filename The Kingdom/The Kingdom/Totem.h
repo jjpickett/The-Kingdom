@@ -24,7 +24,7 @@ public:
 	Totem(GameDataRef data);
 
     /// Constructs a Totem object.
-    Totem(GameDataRef data, std::string name, std::string description, int cost, int health, bool taunt, char ability, int amount);
+    Totem(GameDataRef data, std::string name, std::string description, int cost, char ability, bool taunt, int health, int amount);
 
 	void Init();
 
