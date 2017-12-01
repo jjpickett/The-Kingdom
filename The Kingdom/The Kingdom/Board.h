@@ -4,16 +4,8 @@
 /// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
 /// \date Nov 26, 2017
 ///
-///
-<<<<<<< HEAD
 /// \brief The Board class contains all the players ands cards, controls the 
 /// game logic and is used to update the players clients.
-=======
-/// \brief The Board class contains the player classes and controls the game 
-/// logic such as turn order, drawing cards into each of the players 
-/// hands, controlling the cards abilities and declaring the victor 
-/// when the game is over.
->>>>>>> 4d795295ca5462e872def5a0de096b4e43eaa96a
 ///
 
 #pragma once
@@ -33,19 +25,12 @@
 class Card;
 
 // *******************************************************************************
-<<<<<<< HEAD
-/// \brief The Board class contains all the players ands cards, controls the 
-/// game logic and is used to update the players clients.
-// *******************************************************************************
-
-=======
 /// The Board class contains the player classes and controls the game logic such 
 /// as turn order, drawing cards into each of the players hands, controlling the 
 /// cards abilities and declaring the victor when the game is over. The player 
 /// who is considered the opponent is the one who connects to the game as opposed 
 /// to hosting the game. The host of the game will be considered the main player.
 // *******************************************************************************
->>>>>>> 4d795295ca5462e872def5a0de096b4e43eaa96a
 class Board : public State
 {
 public:
