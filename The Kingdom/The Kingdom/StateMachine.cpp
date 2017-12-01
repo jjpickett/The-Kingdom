@@ -6,16 +6,6 @@
 #include <iostream>
 #include <exception>
 
-/// \fn	void StateMachine::AddState(StateRef newState, bool isReplacing)
-///
-/// \brief	Adds a state to 'isReplacing'
-///
-/// \author	author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
-/// \date	11/30/2017
-///
-/// \param	newState   	State of the new.
-/// \param	isReplacing	True if this object is replacing.
-
 void StateMachine::AddState(StateRef newState, bool isReplacing)
 {
 	this->_isAdding = true;
@@ -24,24 +14,10 @@ void StateMachine::AddState(StateRef newState, bool isReplacing)
 	this->_newState = std::move(newState);
 }
 
-/// \fn	void StateMachine::RemoveState()
-///
-/// \brief	Removes the state
-///
-/// \author	author Taylor Doud, Matthew Rose, author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White, Nora White
-/// \date	11/30/2017
-
 void StateMachine::RemoveState()
 {
 	this->_isRemoving = true;
 }
-
-/// \fn	void StateMachine::ProcessStateChanges()
-///
-/// \brief	Process the state changes
-///
-/// \author	author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
-/// \date	11/30/2017
 
 void StateMachine::ProcessStateChanges()
 {
@@ -75,15 +51,6 @@ void StateMachine::ProcessStateChanges()
 		this->_isAdding = false;
 	}
 }
-
-/// \fn	StateRef &StateMachine::GetActiveState()
-///
-/// \brief	Gets active state
-///
-/// \author	author Taylor Doud, Matthew Rose, author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White, Nora White
-/// \date	11/30/2017
-///
-/// \return	The active state.
 
 StateRef &StateMachine::GetActiveState()
 {

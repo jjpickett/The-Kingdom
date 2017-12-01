@@ -77,10 +77,16 @@ public:
     /// Determines the players effect and applies it to the player.
     virtual void effect(Board* board) = 0;	
 
+    /// Draws the card data to the screen.
+    /// \param[in] dt Delta time (framerate).
 	void Draw(float dt);
 
+    /// Gets the turn
+    /// \return The current turn state.
 	bool getTurn();
 
+    /// Sets a turn
+    /// \param setTurn Sets the turn for the Player.
 	void setTurn(bool setTurn);
 
 	void setPlayer(bool setPlayer);

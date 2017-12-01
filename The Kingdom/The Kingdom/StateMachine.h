@@ -1,3 +1,13 @@
+//
+// CS 2720: GeneralFailure
+//
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
+///
+///
+/// \brief Implements the state machine class
+///
+
 #pragma once
 
 #include <memory>
@@ -13,12 +23,18 @@ public:
 	StateMachine() {}
 	~StateMachine() {}
 
+    /// Adds a state to 'isReplacing'
+    /// \param newState State of the new.
+    /// \param isReplacing True if this object is replacing.
 	void AddState(StateRef newState, bool isReplacing = true);
-	void RemoveState();
+	
+    /// Removes the state
+    void RemoveState();
 
+    /// Process the state changes.
 	void ProcessStateChanges();
 
-
+    /// Gets the current State.
 	StateRef &GetActiveState();
 
 private:
