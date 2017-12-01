@@ -1,11 +1,11 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
 /// \date Oct 26, 2017
 ///
 ///
-/// The Card class is an abstraction of any card that can be played on a Board.
+/// \brief The Card class is an abstraction of any card that can be played on a Board.
 ///
 
 #pragma once

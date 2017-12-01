@@ -170,14 +170,6 @@ void Board::HandleInput()
 						this->_data->socket.send(packet);
 						globalMutex.unlock();
 
-						packet.clear();
-						packet = packetSend.sendPlayersCardsInPlay(hostPlayersCardsInPlay);
-
-						globalMutex.lock();
-						this->_data->socket.send(packet);
-						globalMutex.unlock();
-
-
 					}
 					//THIS PUTS THE CARD BACK IN THE DECK
 					else if (this->hostPlayer->hand.at(x)->isSelected() && sf::Mouse::getPosition(this->_data->window).y > SCREEN_HEIGHT / 2) {
@@ -216,7 +208,27 @@ void Board::HandleInput()
 						this->hostPlayer->setSelection(false);
 					}	
 				}
+				
+				
+
 				checkDeath();
+
+				packet.clear();
+				packet = packetSend.sendPlayersCardsInPlay(hostPlayersCardsInPlay);
+
+				globalMutex.lock();
+				this->_data->socket.send(packet);
+				globalMutex.unlock();
+
+
+				packet.clear();
+				packet = packetSend.sendOpponentsCardsInPlay(guestPlayersCardsInPlay);
+
+				globalMutex.lock();
+				this->_data->socket.send(packet);
+				globalMutex.unlock();
+
+
 			}
 		}
 	}

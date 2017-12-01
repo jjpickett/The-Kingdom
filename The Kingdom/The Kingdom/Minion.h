@@ -1,11 +1,11 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
 ///
 ///
-/// The Minion class is an abstract class that will be inherited by Minion cards, 
+/// \brief The Minion class is an abstract class that will be inherited by Minion cards, 
 /// inherits from Card.
 ///
 
@@ -22,8 +22,10 @@ class Minion : public Card
 {
 public:
 
+    /// The default constructor.
 	Minion();
 
+    /// Initializes the minion.
 	void Init();
 
 	Minion(GameDataRef data);
@@ -69,11 +71,21 @@ public:
     /// Sets the card's sleep state.
     void setAsleep(bool state);
 
+    /// Draws the card data to the screen.
+    /// \param[in] dt Delta time (framerate).
 	void Draw(float dt) override;
 
+    /// Reading in the card data from a packet.
+    /// \param[in] The input packet.
 	void read(sf::Packet &is);
-	sf::Packet write(sf::Packet &os) override;
+	
+    /// Writing the card data to the packet.
+    /// \param[in] os The outgoing packet.
+    /// \return The completed packet.
+    sf::Packet write(sf::Packet &os) override;
 
+    /// Gets the ID of the card.
+    /// \return The ID of the card.
 	sf::Int8 getId() override
 	{
 		if (charge == true)
@@ -84,6 +96,7 @@ public:
 			return MINION_CARD;
 	}
 
+    /// Text displayed for a sleeping card.
     sf::Text asleepText;
 
 protected:
@@ -111,8 +124,11 @@ protected:
 	/// Whether or not the Card is asleep.
 	bool asleep;
 
+    /// The text which displays the health.
 	sf::Text healthText;
-	sf::Text damageText;
+	
+    /// The text which displays the damage the card can do.
+    sf::Text damageText;
 	
 
 };
