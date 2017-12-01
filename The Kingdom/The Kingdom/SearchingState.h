@@ -76,9 +76,6 @@ private:
 	/// \brief	The background
 	sf::Sprite _background;
 
-	/// \brief	The cancel button
-	sf::Sprite _cancelButton;
-
 
 };
 

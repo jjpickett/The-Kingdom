@@ -22,9 +22,6 @@ void SearchingState::Init()
 	this->_data->assets.LoadTexture("CancelButton", CANCEL_SEARCH_FILEPATH);
 
 	this->_background.setTexture(this->_data->assets.getTexture("SearchingBackground"));
-	this->_cancelButton.setTexture(this->_data->assets.getTexture("CancelButton"));
-
-	this->_cancelButton.setPosition((SCREEN_WIDTH / 2) - (this->_cancelButton.getGlobalBounds().width / 2), (SCREEN_HEIGHT / 2) - (this->_cancelButton.getGlobalBounds().height / 2) + 200);
 }
 
 void SearchingState::HandleInput()
@@ -39,13 +36,6 @@ void SearchingState::HandleInput()
 			this->_data->listener.close();
 			this->_data->window.close();
 		}
-		//If the user cancels the search, then take them back to the main menu
-		if (this->_data->input.isSpriteClicked(this->_cancelButton, sf::Mouse::Left, this->_data->window)) {
-			this->_data->socket.disconnect();
-			this->_data->listener.close();
-			this->_data->machine.AddState(StateRef(new MainMenuState(_data)), true);
-		}
-		//TODO: Add functionality for if a user connects with another player
 
 	}
 }
@@ -60,7 +50,6 @@ void SearchingState::Draw(float dt)
 	this->_data->window.clear();
 
 	this->_data->window.draw(this->_background);
-	this->_data->window.draw(this->_cancelButton);
 
 	this->_data->window.display();
 	LookForPlayer();
