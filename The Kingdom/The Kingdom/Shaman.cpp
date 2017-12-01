@@ -6,7 +6,7 @@ Shaman::Shaman()
 {
 }
 
-Shaman::Shaman(GameDataRef data)
+Shaman::Shaman(GameDataRef data):Player(data)
 {
 	this->_data = data;
 	this->_playerSprite.setTexture(_data->assets.getTexture("Shaman"));

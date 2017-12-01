@@ -103,7 +103,7 @@ protected:
     
 
 	bool _selected = false;	
-
+	sf::Text asleepText;
 	sf::Font font;
 	sf::Text descriptionText;
 	sf::Text costText;

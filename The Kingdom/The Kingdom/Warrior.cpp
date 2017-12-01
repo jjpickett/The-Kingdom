@@ -1,11 +1,11 @@
 
 #include "Warrior.h"
 
-Warrior::Warrior( )
+Warrior::Warrior()
 {
 }
 
-Warrior::Warrior(GameDataRef data)
+Warrior::Warrior(GameDataRef data):Player(data)
 {
 	this->_data = data;
 	_playerSprite.setTexture(_data->assets.getTexture("Warrior"));
