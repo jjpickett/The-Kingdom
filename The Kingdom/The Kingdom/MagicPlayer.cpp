@@ -18,11 +18,11 @@ void MagicPlayer::effect(Board* board)
 {
 	switch (ability)
 	{
-	case'H':
-		board->hostPlayer->setHealth(board->hostPlayer->getHealth() + amount);
+	case'H': // Increases the hostPlayer's health
+		board->hostPlayer->setHealth(amount);
 		break;
-	case'C':
-		board->hostPlayer->setActionPoints(board->guestPlayer->getActionPoints() + amount);
+	case'C': // Increases the hostPlayer's actionPoints
+		board->hostPlayer->setActionPoints(amount);
 		break;
 	default:
 		break;
