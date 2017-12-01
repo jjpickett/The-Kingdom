@@ -1,11 +1,13 @@
 
 #include "MinionFriendly.h"
+#include "Board.h"
+#include <stdio.h>
 
 MinionFriendly::MinionFriendly(GameDataRef data) : Minion(data)
 {
 }
 
-MinionFriendly::MinionFriendly(GameDataRef data, std::string name, std::string description, int cost, int health, int attack, bool taunt, bool charge, char id, int amount) : Minion(data, name, description, cost, health, attack, taunt, charge)
+MinionFriendly::MinionFriendly(GameDataRef data, std::string name, std::string description, int cost, int health, int attack, bool taunt, bool charge, char ability, int amount) : Minion(data, name, description, cost, health, attack, taunt, charge)
 {
 	this->ability = ability;
 	this->amount = amount;
@@ -30,4 +32,20 @@ sf::Packet MinionFriendly::write(sf::Packet & os)
 
 void MinionFriendly::effect(Board* board)
 {
+    char test = ability;
+    int randomNum = 0;
+    switch (ability)
+    {
+        case 'H':
+            randomNum = rand() % board->hostPlayersCardsInPlay.size();
+            board->hostPlayersCardsInPlay.at(randomNum)->setCurHealth(+1);
+        break;
+        case 'P':
+            for (int i = 0; i < board->guestPlayersCardsInPlay.size(); i++)
+            {
+                board->guestPlayersCardsInPlay.at(i)->setCurHealth(-1);
+                
+            }
+        break;
+    }
 }

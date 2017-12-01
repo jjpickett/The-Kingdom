@@ -62,6 +62,10 @@ public:
 	/// Returns whether or not the card is asleep.
 	/// \return Whether or not the card is asleep.
 	bool isAsleep();
+    
+    /// Returns whether or not the card is asleep.
+    /// \return Whether or not the card is asleep.
+    void setSleep(bool state);
 
 	void Draw(float dt) override;
 
@@ -77,6 +81,8 @@ public:
 		else
 			return MINION_CARD;
 	}
+
+    sf::Text asleepText;
 
 protected:
 
@@ -105,7 +111,7 @@ protected:
 
 	sf::Text healthText;
 	sf::Text damageText;
-	sf::Text asleepText;
+	
 
 };
 

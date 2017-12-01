@@ -38,7 +38,7 @@ public:
 
 	sf::Int8 getId() override
 	{
-		return MINION_BATTLECRY_CARD;
+		return MINION_FRIENDLY_CARD;
 	}
 };
 

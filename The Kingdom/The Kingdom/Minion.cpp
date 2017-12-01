@@ -61,6 +61,11 @@ bool Minion::isAsleep()
 	return asleep;
 }
 
+void Minion::setSleep(bool state)
+{
+    asleep = state;
+}
+
 void Minion::Draw(float dt)
 {
 	healthText.setString(std::to_string(curHealth));

@@ -151,11 +151,18 @@ void Board::HandleInput()
 				for (int x = 0; x < this->hostPlayer->hand.size(); x++)
 				{
 					//THIS PUTS THE CARD INTO PLAY
-					if (this->hostPlayer->hand.at(x)->isSelected() && sf::Mouse::getPosition(this->_data->window).y < SCREEN_HEIGHT / 2) {
+					if (this->hostPlayer->hand.at(x)->isSelected() && sf::Mouse::getPosition(this->_data->window).y < SCREEN_HEIGHT / 2) 
+                    {
 						this->hostPlayer->hand.at(x)->setSelected(false);
 						this->hostPlayer->setSelection(false);
 
-						this->hostPlayersCardsInPlay.push_back(this->hostPlayer->playCard(x));
+                        if (this->hostPlayer->hand.at(x)->getId() == MINION_BATTLECRY_CARD)
+                        {
+                            this->hostPlayer->hand.at(x)->effect(this);
+                        }
+						
+                        this->hostPlayersCardsInPlay.push_back(this->hostPlayer->playCard(x));
+                        
 						std::cout << "Cards in Play Now: " << hostPlayersCardsInPlay.size() << std::endl;
 						packet = packetSend.sendHandPacket(this->hostPlayer->hand);
 
@@ -239,6 +246,13 @@ void Board::Update(float dt)
 			break;
 		case 4:
 			hostPlayer->setTurn(myPacket.receiveTurnPacket(packetReceive));
+            for (int i = 0; i < this->hostPlayersCardsInPlay.size(); i++)
+            {
+                if (this->hostPlayersCardsInPlay.at(i)->getId() != MINION_BATTLECRY_CARD)
+                {
+                    this->hostPlayersCardsInPlay.at(i)->effect(this);
+                }
+            }
 			//TODO: Run Totems on players side ability here
 
 			break;

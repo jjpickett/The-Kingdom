@@ -80,6 +80,7 @@ public:
 	/// Sets the Minions damageValue.
 	virtual void setDamage(int damagealue) = 0;
 
+    virtual void effect(Board* board) = 0;
 
 	sf::Sprite _cardSprite;
 

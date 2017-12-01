@@ -8,8 +8,8 @@
 #include "Mage.h"
 #include <iostream>
 
-const unsigned short PORT = 5000;
-const std::string IPADDRESS("192.168.0.10");//change to suit your needs
+const unsigned short PORT = 5004;
+const std::string IPADDRESS("192.168.0.15");//change to suit your needs
 
 SearchingState::SearchingState(GameDataRef data) : _data(data)
 {

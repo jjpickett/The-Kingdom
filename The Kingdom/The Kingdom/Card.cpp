@@ -88,3 +88,7 @@ void Card::Draw(float dt)
 	_data->window.draw(costText);
 
 }
+
+void Card::effect(Board * board)
+{
+}

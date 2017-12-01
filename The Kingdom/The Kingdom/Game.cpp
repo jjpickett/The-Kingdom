@@ -1,13 +1,13 @@
 
+#include <SFML/Graphics.hpp>
 #include "Game.h"
 #include "SplashState.h"
-
 
 Game::Game(int width, int height, std::string title)
 {
 	//This creates the window for the game and gives it a close button and a titlebar
-	_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
-	
+	_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar | sf::Style::Resize);
+
 	//This adds the first state to the top of the stack which is the Splash Screen
 	_data->machine.AddState(StateRef(new SplashState(this->_data)));
 
@@ -22,7 +22,7 @@ void Game::Run()
 	float currentTime = this->_clock.getElapsedTime().asSeconds();
 	float accumulator = 0.0f;
 
-	while (this->_data->window.isOpen())
+    while (this->_data->window.isOpen())
 	{
 		this->_data->machine.ProcessStateChanges();
 

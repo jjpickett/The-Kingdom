@@ -43,6 +43,12 @@ public:
 	/// Ends the current players turn, locks their Cards, and then begins the
 	/// turn for the next player and unlocks their Cards.
 	void endTurn();
+    
+    /// The cards that the guestPlayer has in play.
+	std::vector<Card*> guestPlayersCardsInPlay;
+
+	/// The cards that the hostPlayer has in play.
+	std::vector<Card*> hostPlayersCardsInPlay;
 
 private:
 	GameDataRef _data;
@@ -51,11 +57,9 @@ private:
 	sf::Sprite _border;
 
 
-	/// The cards that the hostPlayer has in play.
-	std::vector<Card*> hostPlayersCardsInPlay;
 
-	/// The cards that the guestPlayer has in play.
-	std::vector<Card*> guestPlayersCardsInPlay;
+
+	
 
 	/// True or false value used for verifying the turn order.
 	bool hostPlayerTurn;
