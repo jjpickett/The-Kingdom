@@ -40,8 +40,15 @@ public:
 	/// Sets the Minions curHealth.
 	virtual void setCurHealth(int curHealth) {};
 
-	/// Gets the Minions damageValue.
-	/// \return The Minions damageValue.
+	/// \fn	virtual sf::Int8 MagicMinion::getDamage()
+	///
+	/// \brief	Gets the Minions damageValue.
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+	///
+	/// \return	The Minions damageValue.
+
 	virtual sf::Int8 getDamage() { return -1; };
 
 	/// Sets the Minions damageValue.

@@ -20,6 +20,15 @@ class MagicSummon : public Magic
 {
 public:
 
+	/// \fn	MagicSummon::MagicSummon(GameDataRef data);
+	///
+	/// \brief	Constructor
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+	///
+	/// \param	data	The data.
+
 	MagicSummon(GameDataRef data);
     /// Creates the MagicSummon object and initializes it.
     /// \param[in] id ID of the card.

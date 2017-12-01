@@ -24,9 +24,24 @@
 // *******************************************************************************
 class Board; 
 
+/// \class	Card
+///
+/// \brief	A card.
+///
+/// \author	Jordan Pickett
+/// \date	11/30/2017
+
 class Card
 {
 public:
+
+	/// \fn	Card::Card();
+	///
+	/// \brief	Default constructor
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+
 	Card();
 	
 	void Init();

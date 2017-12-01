@@ -1,3 +1,7 @@
+/// \file	CardFactory.h.
+///
+/// \brief	Declares the card factory class
+
 #pragma once
 
 #include "Card.h"
@@ -17,9 +21,28 @@
 #include "TotemBoard.h"
 #include "Game.h"
 
+/// \class	CardFactory
+///
+/// \brief	A card factory.
+///
+/// \author	Jordan Pickett
+/// \date	11/30/2017
+
 class CardFactory
 {
 public:
+
+	/// \fn	static std::vector<Card*> CardFactory::newDeck(GameDataRef data)
+	///
+	/// \brief	Creates a new deck
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+	///
+	/// \param	data	The data.
+	///
+	/// \return	Null if it fails, else a std::vector&lt;Card*&gt;
+
 	static std::vector<Card*> newDeck(GameDataRef data)
 	{
 		std::vector<Card*> returnHand;
@@ -143,6 +166,18 @@ public:
 		input_stream.close();
 		return returnHand;
 	}
+
+	/// \fn	static std::vector<Card*> CardFactory::newCard(GameDataRef data, sf::Packet & packet)
+	///
+	/// \brief	Creates a new card
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+	///
+	/// \param 		   	data  	The data.
+	/// \param [in,out]	packet	The packet.
+	///
+	/// \return	Null if it fails, else a std::vector&lt;Card*&gt;
 
 	static std::vector<Card*> newCard(GameDataRef data, sf::Packet & packet)
 	{

@@ -20,6 +20,15 @@ class MagicPlayer : public Magic
 {
 public:
 
+	/// \fn	MagicPlayer::MagicPlayer(GameDataRef data);
+	///
+	/// \brief	Constructor
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+	///
+	/// \param	data	The data.
+
 	MagicPlayer(GameDataRef data);
     /// Creates a MagicPlayer object.
     MagicPlayer(GameDataRef data, std::string name, std::string description, int cost, char ability, int amount);

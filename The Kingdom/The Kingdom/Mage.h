@@ -20,14 +20,33 @@ class Mage : public Player
 {
 public:
 
-    /// Constructs a Mage object.
+    /// \fn	Mage::Mage();
+    ///
+    /// \brief	Constructs a Mage object.
+    ///
+    /// \author	Jordan Pickett
+    /// \date	11/30/2017
+
     Mage();
 
-    /// Creates a mage object with GameDataRef.
-    /// \param data Contains Game Meta - Data.
+	/// \fn	Mage::Mage(GameDataRef data);
+	///
+	/// \brief	Creates a mage object with GameDataRef.
+	///
+	/// \author	Jordan Pickett
+	/// \date	11/30/2017
+	///
+	/// \param	data	Contains Game Meta - Data.
+
 	Mage(GameDataRef data);
 
-    /// Destroys the Mage object.
+    /// \fn	Mage::~Mage();
+    ///
+    /// \brief	Destroys the Mage object.
+    ///
+    /// \author	Jordan Pickett
+    /// \date	11/30/2017
+
     ~Mage();
 
     /// Applies the effect of spending 2 stamina points to gain the ability to 
