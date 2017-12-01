@@ -1,5 +1,6 @@
 
 #include "MagicPlayer.h"
+#include "Board.h"
 
 MagicPlayer::MagicPlayer(GameDataRef data) : Magic(data)
 {
@@ -15,6 +16,17 @@ MagicPlayer::~MagicPlayer()
 
 void MagicPlayer::effect(Board* board)
 {
+	switch (ability)
+	{
+	case'H':
+		board->hostPlayer->setHealth(board->hostPlayer->getHealth() + amount);
+		break;
+	case'C':
+		board->hostPlayer->setActionPoints(board->guestPlayer->getActionPoints() + amount);
+		break;
+	default:
+		break;
+	}
 }
 
 void MagicPlayer::read(sf::Packet & is)
