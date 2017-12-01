@@ -1,8 +1,10 @@
 //
 // CS 2720: GeneralFailure
 //
-/// \author Taylor Doud, Matthew Rose
-/// \date Oct 26, 2017
+/// \author Taylor Doud, Matthew Rose, Jordan Pickett, Nora White
+/// \date Nov 26, 2017
+///
+/// \brief The Shaman class is a concrete derived class, inherits from Player.
 ///
 
 
@@ -19,6 +21,9 @@ public:
     
     /// Constructs a Shaman object.
     Shaman();
+
+    /// Constructs a Shaman object with GameDataRef data.
+    /// \param data Contains Game Meta-Data.
 	Shaman(GameDataRef data);
 
     /// Destroys the Shaman object.

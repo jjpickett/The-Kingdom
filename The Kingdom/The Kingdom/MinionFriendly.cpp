@@ -1,7 +1,6 @@
 
 #include "MinionFriendly.h"
 #include "Board.h"
-#include <stdio.h>
 
 MinionFriendly::MinionFriendly(GameDataRef data) : Minion(data)
 {
