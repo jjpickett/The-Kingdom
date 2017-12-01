@@ -47,15 +47,10 @@ sf::Packet MyPacket::sendOpponentsCardsInPlay(std::vector<Card*> cardsInPlay)
 {
 	packetSend.clear();
 	packetSend << 3;
-	
+	packetSend << cardsInPlay.size();
 
 	for (int i = 0; i < cardsInPlay.size(); i++)
 		packetSend << cardsInPlay.at(i)->write(packetSend);
-
-
-	packetSend << static_cast<sf::Uint32>(cardsInPlay.size());
-	for (std::vector<Card*>::const_iterator it = cardsInPlay.begin(); it != cardsInPlay.end(); ++it)
-		packetSend << *it;
 
 	return packetSend;
 }
